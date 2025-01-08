@@ -39,10 +39,18 @@
 
     .globe img {
       position: absolute;
-      width: 150px;
-      height: 150px;
+      width: 100px; /* Smaller size */
+      height: 100px; /* Smaller size */
       border-radius: 50%;
       object-fit: cover;
+    }
+
+    /* Adjust for Mobile Screens */
+    @media (max-width: 768px) {
+      .globe img {
+        width: 70px; /* Smaller size for phones */
+        height: 70px;
+      }
     }
 
     @keyframes spin {
